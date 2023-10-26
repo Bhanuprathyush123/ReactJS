@@ -14,11 +14,17 @@ function App() {
      */
      
      const addValue = () => {
-          setCounter(counter + 1)
+          if ( counter === 20)  alert('Your Ahead')
+          else setCounter(counter + 1)
      }
 
      const removeValue = () => {
-          setCounter(counter -1)
+          if (counter === 0) {
+               alert("Your Under the Hood")
+          } else {
+               setCounter(counter -1)
+          }
+          
      }
 
      const doubleValue = () => {
